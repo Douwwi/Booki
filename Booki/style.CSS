@@ -1,0 +1,241 @@
+:root { 
+    --bleu-principal: #0065FC; 
+    --bleu-clair: #DEEBFF; 
+    --gris: #D9D9D9; 
+    --gris-clair: #F2F2F2; 
+} 
+
+body { 
+    margin: 0; 
+    font-family: 'Raleway', sans-serif; 
+} 
+
+.header { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 0 50px; 
+}
+
+.header_logo { 
+    height: 35px; 
+} 
+
+.header_nav { 
+    display: flex; 
+    gap: 50px; 
+} 
+
+.nav_link { 
+    text-decoration: none; 
+    color: black; 
+    padding-top: 35px; 
+    padding-bottom: 35px; 
+    border-top: 2px solid transparent; 
+    transition: color 0.2s, border-top 0.2s; 
+} 
+
+.nav_link:hover { 
+    color: var(--bleu-principal);
+    border-top: 2px solid var(--bleu-principal); 
+} 
+
+.search_section { 
+    padding: 30px 50px 0 50px; 
+} 
+
+.search_title { 
+    font-size: 22px; 
+    font-weight: 700; 
+    margin: 0 0 8px 0; 
+} 
+
+.search_subtitle { 
+    font-size: 16px; 
+    margin: 0 0 35px 0; 
+} 
+
+.search_form { 
+    display: inline-flex; 
+    height: 49px; 
+    max-width: 100%; 
+} 
+
+.search_form_icon { 
+    background-color: var(--gris-clair); 
+    border: 1px solid var(--gris-clair); 
+    border-radius: 15px 0 0 15px; 
+    width: 50px; 
+    display: flex; 
+    justify-content: center; /*horizontal*/
+    align-items: center; /*vertical*/
+    font-size: 18px; 
+    color: black; 
+} 
+
+.search_form_input { 
+    border-top: 1px solid var(--gris-clair); 
+    border-bottom: 1px solid var(--gris-clair); 
+    border-left: none; 
+    border-right: none; 
+    padding: 0 24px; 
+    font-family: 'Raleway', sans-serif; 
+    font-size: 18px; 
+    font-weight: 700; 
+    color: black; 
+    outline: none; 
+} 
+
+.search_form_btn { 
+    background-color: var(--bleu-principal); 
+    border: 1px solid var(--bleu-principal); 
+    border-radius: 0 15px 15px 0;
+    color: white; 
+    cursor: pointer; 
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px; 
+    font-weight: 700; 
+    padding: 0 16px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    transition: background-color 0.2s ease; 
+}
+
+.search_form_btn:hover { 
+    background-color: #0056b3;
+}
+
+.search_btn_text { 
+    display: inline;
+}
+
+.search_btn_icon { 
+    display: none; 
+} 
+
+.filters_container { 
+    display: flex; 
+    align-items: center; 
+    gap: 15px; 
+    margin-top: 35px; 
+    margin-bottom: 35px; 
+} 
+
+.filters_title { 
+    font-size: 18px; 
+    font-weight: 700; 
+    margin: 0; 
+} 
+
+.filters_list { 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 15px; 
+} 
+
+.filter_item { 
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+    height: 50px; 
+    padding: 0 19px; 
+    background-color: white; 
+    border: 2px solid var(--gris); 
+    border-radius: 25px; 
+    font-family: 'Raleway', sans-serif; 
+    font-size: 17px; 
+    font-weight: 700; 
+    color: black; 
+    cursor: pointer; 
+    transition: background-color 0.2s ease; 
+} 
+
+.filter_item:hover { 
+    background-color: var(--bleu-clair); 
+} 
+
+.filter_icon { 
+    color: var(--bleu-principal); 
+    font-size: 20px; 
+} 
+
+.info_bar { 
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+    margin-bottom: 35px; 
+} 
+
+.info_icon_wrapper { 
+    width: 24px; 
+    height: 24px; 
+    min-width: 24px; 
+    border: 1px solid var(--gris); 
+    border-radius: 50%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+} 
+
+.info_icon { 
+    color: var(--bleu-principal); 
+    font-size: 12px; 
+} 
+
+.info_text { 
+    font-size: 16px; 
+    margin: 0; 
+} 
+
+
+.hebergement-card {
+    background-color: white; 
+    border-radius: 20px; 
+    padding: 5px; 
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+    display: flex;
+    flex-direction: column; 
+    width: 30%; 
+    transition: 0.3s; 
+}
+
+.hebergement-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.hebergement-img {
+    width: 100%; 
+    height: 120px; 
+    object-fit: cover; 
+    border-top-left-radius: 20px; 
+    border-top-right-radius: 20px;
+}
+
+.hebergement-content {
+    padding: 10px; 
+}
+
+.hebergement-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.hebergement-subtitle {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.hebergement-rating {
+    margin-top: 10px;
+}
+
+.hebergement-rating .fa-star {
+    color: var(--bleu-principal); /* Utilise ta variable bleue pour les étoiles pleines */
+    font-size: 12px;
+}
+
+.hebergement-rating .neutral-star {
+    color: var(--gris-clair); 
+}

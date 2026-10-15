@@ -1,0 +1,123 @@
+<!DOCTYPE html> 
+
+<html lang="fr"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- responsivité (tablette et mobile)-->
+    <title>Booki</title> 
+    <!-- polices google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <!-- Icône global -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="style.css"> 
+</head> 
+
+
+<body> 
+    <header class="header">
+        <img src="img/Logo.png" alt="Logo Booki" class="header_logo"> 
+        <nav class="header_nav"> <!-- barre de navigation -->
+            <a href="#hebergements" class="nav_link">Hébergements</a> 
+            <a href="#activites" class="nav_link">Activités</a> 
+        </nav> 
+    </header> 
+
+    <main> 
+
+        <section class="search_section"> 
+            <h1 class="search_title">Trouvez votre hébergement pour des vacances de rêve</h1> 
+            <p class="search_subtitle">En plein centre-ville ou en pleine nature</p> 
+
+
+            <form method="get" action="" class="search_form"> 
+
+                
+                <div class="search_form_icon"> 
+                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i> 
+                </div> 
+
+                <input 
+                    type="text" 
+                    name="city" 
+                    id="city" 
+                    class="search_form_input" 
+                    value="Marseille, France"
+                > 
+                
+                <button type="submit" class="search_form_btn"> 
+                    <span class="search_btn_text">Rechercher</span> 
+                    <i class="fa-solid fa-magnifying-glass search_btn_icon" aria-hidden="true"></i> 
+                </button> 
+
+            </form> 
+            
+            <div class="filters_container"> 
+
+                <h2 class="filters_title">Filtres</h2> 
+
+                <div class="filters_list"> 
+
+                    <button type="button" class="filter_item"> 
+                        <i class="fa-solid fa-money-bill-wave filter_icon" aria-hidden="true"></i> 
+                        <span class="filter_text">Économique</span> 
+                    </button> 
+
+                    <button type="button" class="filter_item"> 
+                        <i class="fa-solid fa-person filter_icon" aria-hidden="true"></i> 
+                        <span class="filter_text">Familial</span> 
+                    </button> <!-- Fin du bouton Familial -->
+
+                    <button type="button" class="filter_item"> 
+                        <i class="fa-solid fa-heart filter_icon" aria-hidden="true"></i> 
+                        <span class="filter_text">Romantique</span> 
+                    </button> 
+
+                    <button type="button" class="filter_item"> 
+                        <i class="fa-solid fa-fire filter_icon" aria-hidden="true"></i> 
+                        <span class="filter_text">Nos pépites</span> 
+                    </button> 
+
+                </div> 
+
+            </div>
+
+
+            <div class="info_bar"> 
+
+                <div class="info_icon_wrapper"> 
+                    <i class="fa-solid fa-info info_icon" aria-hidden="true"></i> 
+                </div> 
+
+                <p class="info_text">Plus de 500 logements sont disponibles dans cette ville</p> 
+            </div> 
+        </section> 
+        
+        <section class="hebergements_section">
+            <h2 class="hebergements_title">Hébergements à Marseille</h2>
+            
+            <div class="hebergements_cards_container">
+                <article class="hebergement-card">
+                    <img src="img/card1.jpg" alt="Chambre avec deux lits simple" class="hebergement-img">
+            
+                    <div class="hebergement-content">
+                        <h3 class="hebergement-title">Auberge La Canebière</h3>
+                        <p class="hebergement-subtitle">Nuit à partir de 25€</p>
+                        
+                        <div class="hebergement-rating">
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star neutral-star" aria-hidden="true"></i> 
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+</body> 
+
+</html> 
