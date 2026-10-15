@@ -232,7 +232,7 @@ body {
 }
 
 .hebergement-rating .fa-star {
-    color: var(--bleu-principal); /* Utilise ta variable bleue pour les étoiles pleines */
+    color: var(--bleu-principal); 
     font-size: 12px;
 }
 
