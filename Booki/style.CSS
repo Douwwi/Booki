@@ -239,3 +239,82 @@ body {
 .hebergement-rating .neutral-star {
     color: var(--gris-clair); 
 }
+
+.hebergements_section {
+    background-color: var(--gris-clair);
+    border-radius: 20px;
+    padding: 30px;
+    margin: 0 50px; 
+}
+
+.hebergements_title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 22px;
+}
+
+.hebergements_cards_container {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    gap: 30px; 
+}
+
+.hebergements_more {
+    display: inline-block;
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 18px;
+    color: black;
+    text-decoration: none; 
+}
+
+.hebergements_more:hover {
+    text-decoration: underline; 
+}
+
+.activites_section {
+    padding: 30px 50px; 
+}
+
+.activites_title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 22px;
+}
+
+.activites_cards_container {
+    display: flex;
+    justify-content: space-between; 
+    gap: 30px; 
+}
+
+.activite-card {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+    display: flex;
+    flex-direction: column;
+    width: 23%; 
+    transition: 0.3s;
+}
+
+.activite-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.activite-img {
+    width: 100%;
+    height: 380px; 
+    object-fit: cover; 
+    border-top-left-radius: 20px; 
+    border-top-right-radius: 20px; 
+}
+
+
+.activite-title {
+    padding: 20px; 
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+}
