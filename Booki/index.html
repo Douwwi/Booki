@@ -3,7 +3,7 @@
 <html lang="fr"> 
 <head> 
     <meta charset="UTF-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- responsivité (tablette et mobile)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Booki</title> 
     <!-- polices google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
@@ -16,6 +16,8 @@
 
 
 <body> 
+
+    <div class="main-container">
     <header class="header">
         <img src="img/Logo.png" alt="Logo Booki" class="header_logo"> 
         <nav class="header_nav"> 
@@ -83,7 +85,6 @@
 
             </div>
 
-
             <div class="info_bar"> 
 
                 <div class="info_icon_wrapper"> 
@@ -94,6 +95,7 @@
             </div> 
         </section> 
         
+        <div class="hebergements-and-populaires">
         <section class="hebergements_section">
             <h2 class="hebergements_title">Hébergements à Marseille</h2>
         
@@ -195,6 +197,70 @@
 
         </section>      
 
+        <section class="populaires_section">
+            <div class="populaires_title">
+                <h2 class="section-title">Les plus populaires</h2>
+                <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+            </div>
+
+            <div class="populaires_cards">
+
+                <article class="populaire-card">
+                    <img src="img/pop1.jpg" alt="Chambre d'hôtel Le soleil du matin">
+                    <div class="populaire-card-content">
+                        <div class="populaire-card-txt">
+                            <h3 class="card-title">Hôtel Le soleil du matin</h3>
+                            <p class="card-subtitle">Nuit à partir de 128€</p>
+                        </div>
+                        <div class="populaire-card-rating">
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="populaire-card">
+                    <img src="img/pop2.jpg" alt="Chambres d'hôtes Au cœur de l'eau">
+                    <div class="populaire-card-content">
+                        <div class="populaire-card-txt">
+                            <h3 class="card-title">Chambres d'hôtes Au cœur de l'eau</h3>
+                            <p class="card-subtitle">Nuit à partir de 71€</p>
+                        </div>
+                        <div class="populaire-card-rating">
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="populaire-card">
+                    <img src="img/pop3.jpg" alt="Hôtel Bleu et Blanc">
+                    <div class="populaire-card-content">
+                        <div class="populaire-card-txt">
+                            <h3 class="card-title">Hôtel Bleu et Blanc</h3>
+                            <p class="card-subtitle">Nuit à partir de 68€</p>
+                        </div>
+                        <div class="populaire-card-rating">
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+    </div> 
+
         <section class="activites_section">
             
             <h2 class="activites_title">Activités à Marseille</h2>
@@ -231,29 +297,30 @@
         <div class="footer_column">
             <h3 class="footer_title">À propos</h3>
             <ul class="footer_list">
-                <li><a href="" class="footer_link">Fonctionnement du site</a></li>
-                <li><a href="" class="footer_link">Conditions générales</a></li>
-                <li><a href="" class="footer_link">Données et confidentialité</a></li>
+                <li><a href="#" class="footer_link">Fonctionnement du site</a></li>
+                <li><a href="#" class="footer_link">Conditions générales</a></li>
+                <li><a href="#" class="footer_link">Données et confidentialité</a></li>
             </ul>
         </div>
 
         <div class="footer_column">
             <h3 class="footer_title">Nos hébergements</h3>
             <ul class="footer_list">
-                <li><a href="" class="footer_link">Charte qualité</a></li>
-                <li><a href="" class="footer_link">Proposer votre hôtel</a></li>
+                <li><a href="#" class="footer_link">Charte qualité</a></li>
+                <li><a href="#" class="footer_link">Proposer votre hôtel</a></li>
             </ul>
         </div>
 
         <div class="footer_column">
             <h3 class="footer_title">Assistance</h3>
             <ul class="footer_list">
-                <li><a href="" class="footer_link">Centre d'aide</a></li>
-                <li><a href="" class="footer_link">Nous contacter</a></li>
+                <li><a href="#" class="footer_link">Centre d'aide</a></li>
+                <li><a href="#" class="footer_link">Nous contacter</a></li>  
             </ul>
         </div>
-        
-    </footer>
+
+    </footer> 
+    </div>
 
 </body>
 </html>

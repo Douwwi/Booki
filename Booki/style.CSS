@@ -188,15 +188,15 @@ body {
     margin: 0; 
 } 
 
-
 .hebergement-card {
     background-color: white; 
+    box-sizing: border-box;
     border-radius: 20px; 
     padding: 5px; 
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
     display: flex;
     flex-direction: column; 
-    width: 30%; 
+    width: 28%; 
     transition: 0.3s; 
 }
 
@@ -244,7 +244,7 @@ body {
     background-color: var(--gris-clair);
     border-radius: 20px;
     padding: 30px;
-    margin: 0 50px; 
+    width: 65%;
 }
 
 .hebergements_title {
@@ -319,6 +319,101 @@ body {
     font-weight: 700;
 }
 
+.hebergements-and-populaires {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 0 50px 30px 50px;
+}
+
+.populaires_section {
+    width: 35%;
+    background-color: var(--gris-clair);
+    border-radius: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.populaires_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.populaires_title .section-title {
+    margin: 0;
+    font-size: 22px;
+}
+
+.populaires_title i {
+    color: var(--bleu-principal);
+    font-size: 18px;
+}
+
+.populaires_cards {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.populaire-card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: row;
+    height: 144px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.populaire-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.populaire-card img {
+    width: 33%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.populaire-card-content {
+    width: 67%;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.populaire-card-txt .card-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+}
+
+.populaire-card-txt .card-subtitle {
+    font-size: 14px;
+    margin: 0;
+}
+
+.populaire-card-rating {
+    display: flex;
+}
+
+.populaire-card-rating i {
+    color: var(--bleu-principal);
+    font-size: 12px;
+}
+
+.populaire-card-rating .neutral-star {
+    color: var(--gris-clair);
+}
+
 .footer {
     display: flex; 
     background-color: var(--gris-clair); 
@@ -355,4 +450,105 @@ body {
 
 .footer_link:hover {
     text-decoration: underline; 
+}
+
+.main-container {
+    max-width: 1440px; 
+    min-width: 320px;  
+    margin: 0 auto;    
+    box-sizing: border-box;
+}
+
+@media (max-width: 1024px) {
+
+    .main-container {
+        margin: auto;
+    }
+
+    .hebergements-and-populaires {
+        flex-direction: column;
+    }
+
+
+    .hebergements_section {
+        width: 100%;
+    }
+
+    .populaires_section {
+        width: 100%;
+    }
+
+    .populaires_cards {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .populaire-card {
+        width: 31%;
+        height: auto; 
+    }
+
+    .populaire-card-txt .card-title {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .header {
+        flex-direction: column;
+        padding: 0;
+        align-items: center; 
+    }
+
+    .header_logo {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .header_nav {
+        width: 100%;
+        gap: 0;
+    }
+
+    .nav_link {
+        width: 50%;
+        text-align: center;
+        padding-top: 15px; 
+        padding-bottom: 15px; 
+        border-top: none; 
+        border-bottom: 2px solid var(--gris-clair); 
+    }
+
+    .nav_link:hover {
+        border-top: none;
+        border-bottom: 2px solid var(--bleu-principal); 
+    }
+
+    .search_section {
+        padding: 30px 20px 0 20px; 
+    }
+
+    .search_form {
+        width: 100%;
+        display: flex;
+    }
+
+    .search_form_input {
+        flex: 1; 
+    }
+
+    .search_btn_text {
+        display: none; 
+    }
+
+    .search_btn_icon {
+        display: block; 
+    }
+
+    .search_form_btn {
+        border-radius: 15px; 
+        padding: 0 20px;
+    }
+
 }
